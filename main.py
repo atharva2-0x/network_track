@@ -7,7 +7,7 @@ gi = pygeoip.GeoIP('GeoLiteCity.dat')
 
 def retKML(dstip, srcip):
     dst = gi.record_by_name(dstip)
-    src = gi.record_by_name('6.81.241.103')
+    src = gi.record_by_name('src_ip')
     try:
         dstlongitude = dst['longitude']
         dstlatitude = dst['latitude']
